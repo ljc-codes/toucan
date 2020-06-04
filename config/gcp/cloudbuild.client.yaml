@@ -1,0 +1,25 @@
+# GCP Cloud Run Deploys Client
+steps:
+    # Installs Node Modules
+      - name: node:10.15.1
+        entrypoint: npm
+        args: ["install"]
+        dir: "services/client"
+      
+    # Installs Vue Command Line
+      - name: node:10.15.1
+        entrypoint: npm
+        args: ["install","-g","@vue/cli"]
+        dir: "services/client"
+      
+    # Builds Client Production Distribution
+      - name: node:10.15.1
+        entrypoint: npm
+        args: ["run", "build"]
+        dir: "services/client"
+      
+    # Deploys to Google Cloud
+      - name: "gcr.io/cloud-builders/gcloud"
+        args: ["app", "deploy"]
+        dir: "services/client"
+      

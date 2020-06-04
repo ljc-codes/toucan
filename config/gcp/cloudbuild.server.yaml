@@ -1,0 +1,26 @@
+# GCP App Engine Deploys Server
+steps:
+    # Builds Docker Image
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['build', '-t', 'gcr.io/artemis-dev-278204/gqlmongogateway', './services/server']
+    
+    # Push the container image to Container Registry
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['push', 'gcr.io/artemis-dev-278204/gqlmongogateway']
+    
+    # Deploy an image from Container Registry to Cloud Run
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args:
+      - 'run'
+      - 'deploy'
+      - 'graphql-mongo-api'
+      - '--image'
+      - 'gcr.io/artemis-dev-278204/gqlmongogateway'
+      - '--region'
+      - 'us-east1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+    
+    images:
+      - 'gcr.io/artemis-dev-278204/gqlmongogateway'

@@ -1,0 +1,4 @@
+query exampleQuery{
+    some_field_1
+    some_field_2
+}
