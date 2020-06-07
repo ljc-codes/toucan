@@ -20,7 +20,7 @@ It consists of two services:
 All service config is done within, toucan/config. 
 
 1) Toucan features GCP cloud build / cloud run yaml files for CICD. 
-   CICD configuration can be found in 'server.cloudbuild.yaml' file. 
+   Project configuration can be found in 'server.cloudbuild.yaml' file. 
    IAM configuration and repo triggers are then required.  
 
 2) Toucan.yaml - General configuration for services and apis. For example,
@@ -34,4 +34,4 @@ Current support is limited to OSX
 ./fly_local.sh
 ```
 
-TODO: docker_local.sh - creates images of services and runs in container.
+Other useful scripts are found in toucan/scripts/
