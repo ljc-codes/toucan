@@ -18,7 +18,7 @@ Out of the box, Toucan comes with several features including:
    - MongoDB Atlas integration  
    - Prebuilt example models and backend interactions. 
    - Scripts to build and run services. 
-   - GCP CIDC (if triggers and IAM is configured) 
+   - GCP CIDC (if triggers and IAM are configured) 
 
 ## Running Toucan
 Current support is limited to OSX
