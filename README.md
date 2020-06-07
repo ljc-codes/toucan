@@ -14,7 +14,7 @@
 Out of the box, Toucan comes with several features including: 
    - Singlepage Vue frontend
    - Uvicorn ASGI server hosting backend a graphql api 
-   - Easy to use yaml for specifying build configurations and exteral resources. 
+   - Easy to use yaml for specifying build configurations and external resources. 
    - MongoDB Atlas integration  
    - Prebuilt example models and backend interactions. 
    - Scripts to build and run services. 
