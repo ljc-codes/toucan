@@ -12,8 +12,8 @@ starter code.
 **toucan** is a lightweight starter code for developing modern apps. 
 It consists of two services: 
 
-1) client - Vue + Apollo
-2) server - GCP + Guvicorn + MongoAtlas + Graphql 
+1) client - GCP Cloud Build + Firebase Hosting + Vue + Apollo
+2) server - GCP Cloud Run + Guvicorn + MongoDB Atlas + Graphql 
 
 ## Config
 
