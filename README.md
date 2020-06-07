@@ -1,5 +1,6 @@
 # 🦜 Toucan 
-
+## OSX (Darwin) compatible
+### version BETA
 
 Toucan is: 
 
