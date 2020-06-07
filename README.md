@@ -6,7 +6,7 @@ Toucan is:
 
 **Google Cloud Platform + Firebase +  Guvicorn +  Mongo Atlas + Graphql + Vue + Apollo**
 
-starter code. 
+starter code for modern web apps.
 
 ## What is it?
 
